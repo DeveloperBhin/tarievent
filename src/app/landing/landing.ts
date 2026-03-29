@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router'; // ✅ ADD THIS
+
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.html',
   styleUrls: ['./landing.css'],
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
 })
 export class Landing implements OnInit {
 
